@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "tick-tack-toe-pwa": {
+      "hosting": {
+        "myapp": [
+          "tick-tack-toe-pwa"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "tick-tack-toe-pwa"
+  }
+}

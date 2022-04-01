@@ -1,0 +1,14 @@
+<h1>Current Player: {{ player }}</h1>
+
+<!-- Bing a click event handler with the event handling function newGame() to the button -->
+<button nbButton outline status="danger" (click)="newGame()">Start New Game</button>
+
+<!-- Structural Directive -->
+<h2 *ngIf="winner">
+    Player {{ winner }} won the game!
+</h2>
+
+<main>
+    <app-square *ngFor="let val of squares; let i = index" [value]="val" (click)="makeMove(i)">
+    </app-square>
+</main>
